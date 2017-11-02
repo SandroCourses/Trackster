@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>trackster</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container-fluid">
+      <div class="row nav-content">
+        <h1 class="col-xs-offset-1 col-xs-7">trackster</h1>
+        <input class="col-xs-2" id="nav-search-input" placeholder="Search">
+        <i class="fa fa-search fa-2x col-xs-1" id="nav-search-btn"></i>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container-fluid">
+      <div class="row list-header">
+        <div class="list-column col-xs-offset-2 col-xs-4" data-sort="song">Song</div>
+        <div class="list-column col-xs-2" data-sort="artist">Artist</div>
+        <div class="list-column col-xs-2">Album</div>
+        <div class="list-column col-xs-2" data-sort="listeners">Listeners</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="list-tracks"></div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script type="text/javascript" src="resources/js/trackster.js"></script>
+  <script type="text/javascript" src="resources/js/tests.js"></script>
+</body>
+</html>
